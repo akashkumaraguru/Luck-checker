@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Game.css">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+
+
+    <div class="united">
+        <div class="main-div">
+            <div class="head-name">
+                <h1>Luck checker</h1>
+                <p>*Give the number between 1 to 10</p>
+
+            </div>
+
+
+            <div class="spac">
+                <div class="inpt">
+                    <input type="number" id="guessnumber" placeholder="Enter a Number">
+                </div>
+                <div class="but">
+                    <button onclick="guess()">Check</button>
+                    <button onclick="clearInput()">Clear</button>
+                </div>
+            </div>
+
+
+            <div class="instruct">
+                <p id="show" class="luck">Your's Today Luck?</p>
+                <p id="score" class="Attempt">Attempt : 10</p>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <img src="./Assests/sapiens.png" alt="img">
+            <p class="day"> Day start with <b style="font-size: larger; color: rgb(232, 62, 62);">#Luck checker</b></p>
+
+        
+        </div>
+
+    </div>
+
+    <p class="Akash">Developed by <a href="https://github.com/akashkumaraguru" target="_blank">@Akash kumaraguru</a></p>
+
+
+
+
+</body>
+<script>
+    var guessNumber = document.getElementById("guessnumber")
+    var show = document.getElementById("show")
+    var randomNumber = Math.floor(Math.random() * 10) + 1;
+    var totalscore = 10
+    var score = document.getElementById("score")
+
+
+    function guess() {
+        var enteredNumber = guessNumber.value
+        if (enteredNumber > 10) {
+            alert("Read the description :) Give the number between 1 to 10")
+        }
+        if (randomNumber == enteredNumber) {
+            score.textContent = "Attempt : " + totalscore
+            alert("Today is Your day!!")
+        }
+        else {
+
+            totalscore = totalscore - 1;
+            while (totalscore <= 0) {
+                score.textContent = "0"
+                alert("Today turn over!! come 'Tomorrow' ")
+            }
+            score.textContent = "Attempt :" + totalscore
+            show.textContent = "No Luck"
+            guessNumber.value = "";
+
+        }
+
+    }
+    function clearInput() {
+        guessNumber.value = "";
+    }
+</script>
+
+
+</html>

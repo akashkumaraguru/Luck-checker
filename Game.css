@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+h1,
+p {
+    color: #D9E5F2;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #D9E5F2;
+    position: fixe;
+
+}
+
+.main-div {
+    margin: 100px;
+    height: 70vh;
+    width: 50vw;
+    background-color: rgb(47, 157, 254);
+    border-radius: 30px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.head-name {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 40vw;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+input:focus {
+    outline: none;
+}
+
+.spac {
+    margin-bottom: 50px;
+
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.but {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    height: 5px;
+}
+
+p {
+    font-weight: 600;
+    color: black;
+    font-size: large;
+}
+
+.luck {
+    color: #D9E5F2;
+}
+
+.Attempt {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.united {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+img {
+    width: 35vw;
+
+}
+
+.vector {
+    float: left;
+    margin-right: 40%;
+    padding-right: 60px;
+
+}
+
+.day {
+    width: 30vw;
+    text-align: center;
+
+}
+
+.Akash {
+    margin-top: 500px;
+    text-align: center;
+
+}
