@@ -24,7 +24,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #D9E5F2;
-    position: fixe;
+    position: fixed;
 
 }
 
@@ -127,5 +127,66 @@ img {
 .Akash {
     margin-top: 500px;
     text-align: center;
+
+}
+
+@media screen and (max-width:767px) {
+
+    body {
+        background-color: blanchedalmond;
+    }
+
+    .right-side {
+        visibility: hidden;
+    }
+
+    .united {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        margin-left: 100px;
+    }
+
+    .head-name {
+        text-align: center;
+        font-size: medium;
+        margin-left: 60px;
+    }
+
+    h1 {
+        width: 100vw;
+        text-align: left;
+
+    }
+
+    .give {
+        width: 500px;
+        text-align: left;
+        font-size: medium;
+    }
+
+    .main-div {
+        width: 70vw;
+        padding-left: 40px;
+        display: flex;
+
+
+    }
+    .inpt{
+        width: 100vw;
+        margin-left: 50px;
+    }
+    .but {
+        height: 5px;
+        width: 60vw;
+        margin: 10px;
+        margin-left:2px;
+       
+    }
+
+    .Akash {
+        padding: 50px;
+    }
+
 
 }
